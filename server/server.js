@@ -20,9 +20,9 @@ io.on("connection", (socket) => {
     console.log("usuario conectado");
 
     //Emite por consola un mensaje cada vez que se recibe un mensaje
-    socket.on("mensaje", (mensage) => {
-        console.log("Mensaje recibido:", mensage);
-        io.emit("mensaje", mensage);
+    socket.on("mensaje", (mensaje) => {
+        console.log("Mensaje recibido:", mensaje);
+        io.emit("mensaje", mensaje);
     });
 
     //Emite por consola un mensaje cada vez que un usuario se desconecta
